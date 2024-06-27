@@ -36,19 +36,19 @@ This project aims to address the critical need for data security by creating a S
 A validation system will be developed to ensure that all exchanged data adheres to predefined security standards and policies. This includes rigorous data type validation, length checks, and compliance with security protocols. The proposed service addresses the critical need for data security by automating the detection of sensitive information, applying robust encryption, and integrating custom security logic. This project is positioned to be a valuable asset for organizations seeking to fortify their sensitive information and comply with stringent data protection regulations.<br>
 
 ## Functional Specifications:
-<table>
-Controller	Method	Endpoint	Functionality	Behavior
-Sensitive Data Detection	POST	/sensitive-data/scan	Scans data for sensitive information	Analyzes request payload for sensitive data patterns, generates alerts, and returns results.
-Security Validation	POST	/security-validation/validate-data	Validates data for security compliance	Applies data type validation, length checks, and other security compliance checks, returns validation result.
-Custom Logic Encryption	POST	/custom-encryption/hash-password	Hashes a password for secure storage	Accepts a password, applies one-way hashing algorithm, and returns hashed password.
-Custom Logic Encryption	POST	/custom-encryption/exchange-mapping	Applies exchange mapping to data	Accepts data, applies exchange mapping, and returns mapped data.
-Custom Logic Encryption	POST	/custom-encryption/compare-password	Compares original and hashed passwords	Accepts original and hashed passwords, compares them, and returns the result.
-Custom Logic Encryption	POST	/custom-encryption/aes-encrypt	Encrypts data using AES	Accepts data, applies AES encryption, and returns encrypted data.
-Custom Logic Encryption	POST	/custom-encryption/aes-decrypt	Decrypts data using AES	Accepts encrypted data, applies AES decryption, and returns decrypted data.
-Admin	POST	/admin/rotate-key	Rotates encryption keys for security	Accepts parameters for key rotation, initiates rotation, and returns success or failure.
-Monitoring	GET	/monitoring/metrics	Provides application metrics	Retrieves and returns various metrics data.
-Monitoring	GET	/monitoring/info	Offers general information about the app	Retrieves and returns general information.
-Monitoring	GET	/monitoring/health	Checks and reports overall health status	Conducts health checks, returns overall health status.</table><br>
+<table><tr><th>
+Controller</th>	<th>Method</th>	<th>Endpoint	</th><th>Functionality</th>	<th>Behavior</th></tr>
+<tr>Sensitive Data Detection	<td>POST</td>	/sensitive-data/scan	Scans data for sensitive information	Analyzes request payload for sensitive data patterns, generates alerts, and returns results.</tr>
+<tr>Security Validation	POST	/security-validation/validate-data	Validates data for security compliance	Applies data type validation, length checks, and other security compliance checks, returns validation result.</tr>
+<tr>Custom Logic Encryption	POST	/custom-encryption/hash-password	Hashes a password for secure storage	Accepts a password, applies one-way hashing algorithm, and returns hashed password.</tr>
+<tr>Custom Logic Encryption	POST	/custom-encryption/exchange-mapping	Applies exchange mapping to data	Accepts data, applies exchange mapping, and returns mapped data.</tr>
+<tr>Custom Logic Encryption	POST	/custom-encryption/compare-password	Compares original and hashed passwords	Accepts original and hashed passwords, compares them, and returns the result.</tr>
+<tr>Custom Logic Encryption	POST	/custom-encryption/aes-encrypt	Encrypts data using AES	Accepts data, applies AES encryption, and returns encrypted data.</tr>
+<tr>Custom Logic Encryption	POST	/custom-encryption/aes-decrypt	Decrypts data using AES	Accepts encrypted data, applies AES decryption, and returns decrypted data.</tr>
+<tr>Admin	POST	/admin/rotate-key	Rotates encryption keys for security	Accepts parameters for key rotation, initiates rotation, and returns success or failure.</tr>
+<tr>Monitoring	GET	/monitoring/metrics	Provides application metrics	Retrieves and returns various metrics data.</tr>
+<tr>Monitoring	GET	/monitoring/info	Offers general information about the app	Retrieves and returns general information.</tr>
+<tr>Monitoring	GET	/monitoring/health	Checks and reports overall health status	Conducts health checks, returns overall health status.</tr></table><br>
 <i>Table 2.1 – Functional Specifications</i>
 ## Use Case Diagram
 ### Description:
